@@ -21,7 +21,7 @@ import javax.annotation.Resource;
  */
 @RestController
 @RequestMapping("/shop")
-public class ShopController {
+public class   ShopController {
 
     @Resource
     public IShopService shopService;
