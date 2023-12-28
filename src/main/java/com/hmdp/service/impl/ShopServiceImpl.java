@@ -39,7 +39,7 @@ public class ShopServiceImpl extends ServiceImpl<ShopMapper, Shop> implements IS
             Shop shop = JSONUtil.toBean(shopJson, Shop.class);
             return Result.ok(shop);
         }
-        //4.不存在，返回错误
+        //4.不存在，根据id查询数据库
         Shop shop = getById(id);
         //5.不存在，返回错误
         if (shop == null) {
